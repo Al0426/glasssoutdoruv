@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Sports Sunglasses - UV Protection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+        }
+        
+        .gold-text {
+            color: #D4AF37;
+        }
+        
+        .gold-border {
+            border-color: #D4AF37;
+        }
+        
+        .gold-bg {
+            background-color: #D4AF37;
+        }
+        
+        .black-bg {
+            background-color: #0a0a0a;
+        }
+        
+        .section-divider {
+            border-top: 1px solid #D4AF37;
+            opacity: 0.3;
+            margin: 3rem 0;
+        }
+        
+        .promo-box {
+            background: linear-gradient(135deg, #D4AF37 0%, #F5D98F 100%);
+            color: #0a0a0a;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+            }
+        }
+        
+        .testimonial-card {
+            background: rgba(20, 20, 20, 0.8);
+            border-left: 3px solid #D4AF37;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #D4AF37;
+        }
+        
+        .countdown-box {
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        
+        .countdown-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #D4AF37;
+        }
+        
+        .product-image {
+            transition: transform 0.3s ease;
+            width: 100%;
+            height: auto;
+        }
+        
+        .product-image:hover {
+            transform: scale(1.03);
+        }
+        
+        /* Full size images */
+        .main-product-image {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .detail-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .variant-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .promo-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .feature-item {
+            background: rgba(20, 20, 20, 0.5);
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header Section -->
+    <header class="relative overflow-hidden">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gold-text">LUXURY<span class="text-white">EYEWEAR</span></div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#features" class="text-white hover:gold-text transition">Fitur</a>
+                    <a href="#details" class="text-white hover:gold-text transition">Detail</a>
+                    <a href="#testimonials" class="text-white hover:gold-text transition">Testimoni</a>
+                    <a href="#order" class="gold-text font-semibold">Beli Sekarang</a>
+                </div>
+                <button class="md:hidden text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Full Size Main Image -->
+    <section class="py-0">
+        <div class="container mx-auto px-0">
+            <img src="https://ae01.alicdn.com/kf/A44c2172e94344d74913cad19325f66b64.jpg" 
+                 alt="Premium Sports Sunglasses" 
+                 class="main-product-image">
+        </div>
+    </section>
+
+    <!-- Product Title & Description -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-3xl md:text-4xl font-bold mb-4 gold-text">Premium Sports Sunglasses</h1>
+                <p class="text-lg md:text-xl mb-6 text-gray-300">Kacamata Olahraga Premium dengan Perlindungan UV400</p>
+                <p class="text-gray-400 mb-8">
+                    Ideal untuk aktivitas seperti bersepeda, lari, mendaki, atau mengendarai sepeda motor. Kacamata ini membantu meningkatkan penglihatan saat olahraga dan mengurangi silau dari cahaya matahari langsung.
+                </p>
+                <a href="#order" class="inline-block mt-8 px-8 py-3 gold-bg text-black font-bold rounded-lg hover:bg-yellow-600 transition duration-300 transform hover:scale-105">
+                    DAPATKAN SEKARANG
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Features Section -->
+    <section id="features" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 gold-text">FITUR UNGGULAN</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-item">
+                    <div class="feature-icon mb-4 text-center">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 gold-text text-center">UV400 Protection</h3>
+                    <p class="text-gray-400 text-center">
+                        Lapisan pelindung UV400 menghalangi sebagian besar sinar UVA dan UVB yang berbahaya, secara efektif mengurangi masalah silau, membuat bidang penglihatan lebih jelas dan melindungi mata dari rangsangan sinar matahari langsung.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-item">
+                    <div class="feature-icon mb-4 text-center">
+                        <i class="fas fa-head-side-virus"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 gold-text text-center">Desain Ergonomis</h3>
+                    <p class="text-gray-400 text-center">
+                        Pengalaman pemakaian yang nyaman, kekuatan penjepitan pelipis yang wajar dapat mengurangi tekanan kepala dan menghilangkan rasa tertekan. Desain melingkar dapat menyesuaikan dengan berbagai bentuk kepala dan tidak mudah menjepit wajah.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-item">
+                    <div class="feature-icon mb-4 text-center">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 gold-text text-center">Tahan Benturan</h3>
+                    <p class="text-gray-400 text-center">
+                        Lapisan penguat tahan benturan pada lensa polikarbonat memiliki karakteristik tahan benturan dan tahan gores, yang dapat memastikan lensa tetap utuh bahkan jika terkena batu yang beterbangan atau tabrakan tidak disengaja saat berkendara dengan kecepatan tinggi.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <!-- Feature 4 -->
+                <div class="feature-item">
+                    <div class="feature-icon mb-4 text-center">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 gold-text text-center">Lensa Definisi Tinggi</h3>
+                    <p class="text-gray-400 text-center">
+                        Teknologi pelapisan lensa definisi tinggi menggunakan teknologi pelapisan optik presisi untuk meningkatkan transmitansi lensa dan reproduksi warna, meningkatkan kontras, mempertajam detail, dan membuat bidang pandang lebih jelas.
+                    </p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-item">
+                    <div class="feature-icon mb-4 text-center">
+                        <i class="fas fa-nose"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 gold-text text-center">Bantalan Hidung Nyaman</h3>
+                    <p class="text-gray-400 text-center">
+                        Bantalan hidung karet anti selip dan lembut, mengurangi tekanan pada pangkal hidung. Dirancang untuk berkendara yang aman, cocok untuk berbagai olahraga luar ruangan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Product Details with Full Size Images -->
+    <section id="details" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 gold-text">DETAIL PRODUK</h2>
+            
+            <div class="grid grid-cols-1 gap-12">
+                <div class="flex flex-col items-center">
+                    <img src="https://ae01.alicdn.com/kf/A611228c3fa624cc2ada7bb24bb62549bz.jpg" 
+                         alt="Detail Kacamata" 
+                         class="detail-image product-image mb-4">
+                    <p class="text-gray-400 text-center">Desain premium dengan perlindungan UV400 maksimal</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://ae01.alicdn.com/kf/Acc13be9b25c14d558fda0fdeb919337fu.jpg" 
+                         alt="Detail Kacamata" 
+                         class="detail-image product-image mb-4">
+                    <p class="text-gray-400 text-center">Frame kokoh dengan material berkualitas tinggi</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://ae01.alicdn.com/kf/Adf0f9048342347f59e4270ca85c2e05fr.jpg" 
+                         alt="Detail Kacamata" 
+                         class="detail-image product-image mb-4">
+                    <p class="text-gray-400 text-center">Lensa tahan benturan untuk keamanan maksimal</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://ae01.alicdn.com/kf/Ae3ae87a3c0b7474db3bd2a45d8bd7a29b.jpg" 
+                         alt="Detail Kacamata" 
+                         class="detail-image product-image mb-4">
+                    <p class="text-gray-400 text-center">Tampilan stylish dari berbagai angle</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://ae01.alicdn.com/kf/A6d1aee2fc2fa43f2a503080328584815d.jpg" 
+                         alt="Detail Kacamata" 
+                         class="detail-image product-image mb-4">
+                    <p class="text-gray-400 text-center">Nyaman dipakai untuk aktivitas outdoor</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://ae01.alicdn.com/kf/A74e4a683dec3467eaea07dfb5ee9a866B.jpg" 
+                         alt="Detail Kacamata" 
+                         class="detail-image product-image mb-4">
+                    <p class="text-gray-400 text-center">Desain yang ergonomis untuk kenyamanan</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://ae01.alicdn.com/kf/A37e170745ae14973974434afabf6b5c9W.jpg" 
+                         alt="Detail Kacamata" 
+                         class="detail-image product-image mb-4">
+                    <p class="text-gray-400 text-center">Kualitas premium tahan lama</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://ae01.alicdn.com/kf/Afaf4cf9c523e44ebb4a8662f1366a38dW.jpg" 
+                         alt="Detail Kacamata" 
+                         class="detail-image product-image mb-4">
+                    <p class="text-gray-400 text-center">Bantalan hidung yang nyaman</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://ae01.alicdn.com/kf/A9740a8e60d6249f085a444acd23baa05G.jpg" 
+                         alt="Detail Kacamata" 
+                         class="detail-image product-image mb-4">
+                    <p class="text-gray-400 text-center">Gaya modern untuk penampilan sporty</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Color Variants with Full Size Image -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 gold-text">PILIHAN WARNA</h2>
+            
+            <div class="flex justify-center">
+                <img src="https://ae01.alicdn.com/kf/Afbaf638877e648588cd56090b5840a1cY.jpg" 
+                     alt="Color Variants" 
+                     class="variant-image product-image">
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 gold-text">TESTIMONI PELANGGAN</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        "Kacamata ini benar-benar nyaman dipakai seharian! Saya sering bersepeda jarak jauh dan kacamata ini sangat membantu mengurangi silau matahari. Frame-nya ringan tapi kokoh, tidak membuat kepala sakit meski dipakai lama."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-gray-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold gold-text">Andi Pratama</h4>
+                            <p class="text-sm text-gray-500">Pesepeda, Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        "Sebagai pengendara motor harian, kacamata ini sangat membantu. Tidak seperti kacamata biasa yang sering berkabut, lensanya tetap jernih meski cuaca panas atau hujan. Desainnya juga stylish, membuat penampilan lebih sporty."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-gray-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold gold-text">Rina Wijaya</h4>
+                            <p class="text-sm text-gray-500">Pengendara Motor, Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        "Saya membeli ini untuk hiking dan sangat puas! Lensa tidak mudah tergores meski sering terkena ranting pohon. Yang paling saya suka adalah bantalan hidungnya yang empuk, tidak meninggalkan bekas merah meski dipakai seharian."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-gray-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold gold-text">Dewi Anggraeni</h4>
+                            <p class="text-sm text-gray-500">Pecinta Alam, Bogor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Promo Countdown -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6 gold-text">PROMO SPESIAL HARI INI</h2>
+                <p class="text-xl text-gray-300 mb-8">Dapatkan Diskon Spesial Untuk Hari Ini Saja, Harga Akan Kembali Normal Setelah:</p>
+                
+                <div class="countdown-box rounded-lg p-6 mb-8">
+                    <div class="flex justify-center space-x-4 md:space-x-8">
+                        <div class="text-center">
+                            <div class="countdown-number" id="countdown-hours">00</div>
+                            <div class="text-gray-400">Jam</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="countdown-number" id="countdown-minutes">00</div>
+                            <div class="text-gray-400">Menit</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="countdown-number" id="countdown-seconds">00</div>
+                            <div class="text-gray-400">Detik</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="promo-box rounded-lg p-6 max-w-2xl mx-auto mb-8">
+                    <h3 class="text-2xl font-bold mb-2">Harga Promo: Rp 157.230</h3>
+                    <p class="font-semibold">Anda Hemat Rp 50.000 dari harga normal Rp 207.230</p>
+                </div>
+                
+                <p class="text-gray-400 mb-8">*Harga akan kembali normal setelah timer habis</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Notes -->
+    <section class="py-8">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto bg-black bg-opacity-50 rounded-lg p-6">
+                <h3 class="text-xl font-semibold gold-text mb-4">CATATAN PESANAN & PENGIRIMAN</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-400 mr-2 mt-1"></i>
+                        <span>Pengiriman 2 - 4 Hari Setelah Pemesanan</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-400 mr-2 mt-1"></i>
+                        <span>Mohon Isi Alamat Dengan Lengkap</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-400 mr-2 mt-1"></i>
+                        <span>100% Product Original dengan Garansi Resmi</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form with Promo Image -->
+    <section id="order" class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-8">
+                    <img src="https://ae01.alicdn.com/kf/A669093633cc648458d5bb2f6a408b91cP.jpg" 
+                         alt="Promo Diskon" 
+                         class="promo-image rounded-lg product-image">
+                </div>
+                
+                <div class="bg-black bg-opacity-70 rounded-lg p-6 border border-gray-800">
+                    <h2 class="text-2xl font-bold text-center mb-6 gold-text">FORM PEMESANAN</h2>
+                    
+                    <!-- OrderOnline Embed Code -->
+                    <div class="ooef">
+                        <form class="orderonline-embed-form" data-username="emma" data-product-slug="s4tfdref4567k" data-product-id="68ab621cd3c2b2c14d08be12" id="oo-embed-form-s4tfdref4567k-5817" data-origin="orderonline">
+                            <div class="ooef-loader">
+                                <style>
+                                    .ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}
+                                    @keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                    @-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                    .ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}
+                                    .ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}
+                                    .ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}
+                                    @-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                                    @keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                                </style>
+                                <div aria-live="polite" role="status">
+                                    <div>Loading...</div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <script>
+                        if (typeof xLogError != 'function') {
+                            var xLogError = function (error) {
+                                var req = new XMLHttpRequest();
+                                var payload = JSON.stringify({
+                                    url: document.location.href,
+                                    line: error.line,
+                                    stack: error.stack
+                                });
+                                var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                                req.open('POST', 'https://api.orderonline.id/log', true);
+                                req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                                req.send(params);
+                            };
+                        }
+                        try {
+                            if (typeof xEmbedScript != 'function') {
+                                var xEmbedScript = function () {
+                                    !function(w, d, e, v, id, t, s) {
+                                        if (d.getElementById(id)) return;
+                                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                        s = d.getElementsByTagName(e)[0];
+                                        s.parentNode.insertBefore(t, s);
+                                    }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                                };
+                            }
+                            if (typeof xEmbedInit != 'function') {
+                                var xEmbedInit = function (w, n) {
+                                    if (w.ooe) return;
+                                    n = w.ooe = function() {
+                                        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                                    };
+                                    if (!w._ooe) w._ooe = n;
+                                    n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                                };
+                            }
+                            xEmbedInit(window);
+                            ooe('setup', 'redirect', 'https://emma.orderonline.id');
+                            ooe('init', '5f16831a9d8e8e4fb67472e5', '68ab621cd3c2b2c14d08be12', null, 'oo-embed-form-s4tfdref4567k-5817', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});
+                            if (!window.jQuery) {
+                                !function(w, d, e, v, id, t, s) {
+                                    if (d.getElementById(id)) return;
+                                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                    t.addEventListener('load', xEmbedScript);
+                                    s = d.getElementsByTagName(e)[0];
+                                    s.parentNode.insertBefore(t, s);
+                                }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                            } else {
+                                xEmbedScript();
+                            }
+                        } catch (e) {
+                            xLogError(e);
+                            throw e;
+                        }
+                    </script>
+                    <!-- End OrderOnline Embed Code -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-2xl font-bold gold-text mb-4 md:mb-0">LUXURY<span class="text-white">EYEWEAR</span></div>
+                <div class="text-gray-400 text-sm">
+                    &copy; 2023 Premium Sports Sunglasses. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 999);
+            
+            const diff = endOfDay - now;
+            
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown-hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('countdown-minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('countdown-seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
